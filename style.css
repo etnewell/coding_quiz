@@ -1,18 +1,39 @@
-body{
-    background-color: blanchedalmond;
+#mainbody{
+    background-color: lightgray;
+    color: black;
+    border-color: black;
+    border-left: 25%;
+    border-right: 25%;
+    text-align: center;
+
+
 };
+#allQuestions{
+    align-items: center;
+
+}
+.questiontext{
+    text-decoration: bold;
+    text-size-adjust: 36pt;
+}
+.questionspace{
+    text-size-adjust: 36pt;
+}
 .top-bar{
     background-color: grey;
     color: black;
+    margin-bottom: 0px;
 
 };
 
 #hsBtn{
-    text-align: left ;
+
+
     
 };
 
 #timerDisplay{
-    text-align: right;
+    position: absolute;
+    align-self: right;
 };
 

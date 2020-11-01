@@ -69,7 +69,6 @@ scorePage.style.display = "none";
 
 
 
-
 // Hide/show function declaration
 var hide1show2 = function(){
 
@@ -159,82 +158,14 @@ var hideScoreShowFirst = function(){
 };
 
  
-// Question hiders/showers
-startBtn.addEventListener("click", function(event){
-
-    if (firstQ.style.display === "none") {
-        firstQ.style.display = "block";
-    } else {
-        firstQ.style.display = "none";
-    }
-    hideFirstPage()
-  }
-);
-
-q1btnAry.forEach(function(elem){
-
-    elem.addEventListener("click", function(){
-hide1show2()
-    });
-  });
-
-q2btnAry.forEach(function(elem){
-
-    elem.addEventListener("click", function(){
-hide2show3()
-    });
-  });   
-
-q3btnAry.forEach(function(elem){
-
-    elem.addEventListener("click", function(){
-hide3show4()
-    });
-  }); 
-
-q4btnAry.forEach(function(elem){
-
-    elem.addEventListener("click", function(){
-    hide4show5(); 
-    });
-
-  });   
-
-q5btnAry.forEach(function(elem){
-
-    elem.addEventListener("click", function(){
-    hide5showScore();
-    var initialInput = prompt("What are your initials?");
-    scores.push(correctCount); 
-    initialAry.push(initialInput);
-
-        var li = document.createElement('li');
-        li.textContent = correctCount;
-        scoreList.appendChild(li);
 
 
-        var li = document.createElement('li');
-        li.textContent = initialInput;
-        initList.appendChild(li);
-
-    
-    
-    });
-
-  });  
-
-resetBtn.addEventListener("click", function(){
-    hideScoreShowFirst()
-    correctCount =0;
-  });
-
-
-var scoreList = document.getElementById('scoreDisplay');
-scores.forEach(function (scores) {
-    var li = document.createElement('li');
-    li.textContent = scores;
-    scoreList.appendChild(li);
-})
+// var scoreList = document.getElementById('scoreDisplay');
+// scores.forEach(function (scores) {
+//     var li = document.createElement('li');
+//     li.textContent = scores;
+//     scoreList.appendChild(li);
+// })
 
 
 
@@ -346,6 +277,76 @@ document.getElementById("5a4").addEventListener("click", function(){
     console.log(correctCount);
 
 })  
+
+// Question hiders/showers
+startBtn.addEventListener("click", function(event){
+
+    if (firstQ.style.display === "none") {
+        firstQ.style.display = "block";
+    } else {
+        firstQ.style.display = "none";
+    }
+    hideFirstPage()
+  }
+);
+
+q1btnAry.forEach(function(elem){
+
+    elem.addEventListener("click", function(){
+hide1show2()
+    });
+  });
+
+q2btnAry.forEach(function(elem){
+
+    elem.addEventListener("click", function(){
+hide2show3()
+    });
+  });   
+
+q3btnAry.forEach(function(elem){
+
+    elem.addEventListener("click", function(){
+hide3show4()
+    });
+  }); 
+
+q4btnAry.forEach(function(elem){
+
+    elem.addEventListener("click", function(){
+    hide4show5(); 
+    });
+
+  });   
+
+q5btnAry.forEach(function(elem){
+
+    elem.addEventListener("click", function(){
+    hide5showScore();
+    var initialInput = prompt("What are your initials?");
+    scores.push(correctCount); 
+    initialAry.push(initialInput);
+
+        var li = document.createElement('li');
+        li.textContent = correctCount + " correct";
+        scoreList.appendChild(li);
+
+
+        var li = document.createElement('li');
+        li.textContent = initialInput;
+        initList.appendChild(li);
+
+    
+    
+    });
+
+  });  
+
+resetBtn.addEventListener("click", function(){
+    hideScoreShowFirst()
+    correctCount =0;
+  });
+
 
 // console.log(correctCount);
 // console.log(incorrectCount);

@@ -22,50 +22,50 @@
 
     <div id="allQuestions">
          <div id="firstQcontent">
-            <div id="state1">Question 1!</div>    
-            <div id="questionspace">1</div>
-            <div id="1ans1"><button class="ansbuttons1" id="1a1">correct</button></div>
-            <div id="1ans2"><button class="ansbuttons1" id="1a2">12</button></div>
-            <div id="1ans3"><button class="ansbuttons1" id="1a3">13</button></div>
-            <div id="1ans4"><button class="ansbuttons1" id="1a4">14</button></div>
+            <div id="state1" class="questiontext">Question 1!</div>    
+            <div id="questionspace">What is the difference between java and css?</div>
+            <div id="1ans1"><button class="ansbuttons1" id="1a1">CSS is for style and Java is for logic.</button></div>
+            <div id="1ans2"><button class="ansbuttons1" id="1a2">They are the same thing.</button></div>
+            <div id="1ans3"><button class="ansbuttons1" id="1a3">Java is for coffee, what do you mean?</button></div>
+            <div id="1ans4"><button class="ansbuttons1" id="1a4">Java is for style CSS is for logic.</button></div>
          </div>    
 <!-- q1btn id^ -->
 
 
         <div id="secondQcontent">
-             <div id="state1">Question 2!</div>    
-             <div id="questionspace">2</div>
-             <div id="2ans1"><button class="ansbuttons2" id="2a1">q2btn</button></div>
-            <div id="2ans2"><button class="ansbuttons2" id="2a2">correct</button></div>
-            <div id="2ans3"><button class="ansbuttons2" id="2a3">q2btn</button></div>
-            <div id="2ans4"><button class="ansbuttons2" id="2a4">q2btn</button></div>
+             <div id="state2" class="questiontext">Question 2!</div>    
+             <div id="questionspace">What kind of file is the main page based on?</div>
+             <div id="2ans1"><button class="ansbuttons2" id="2a1">jpeg</button></div>
+            <div id="2ans2"><button class="ansbuttons2" id="2a2">html</button></div>
+            <div id="2ans3"><button class="ansbuttons2" id="2a3">pdf</button></div>
+            <div id="2ans4"><button class="ansbuttons2" id="2a4">css</button></div>
          </div>    
 
          <div id="thirdQcontent">
-            <div id="state1">Question 3!</div>    
-            <div id="questionspace">3</div>
-            <div id="3ans1"><button class="ansbuttons3" id="3a1">q3btn</button></div>
-            <div id="3ans2"><button class="ansbuttons3" id="3a2">q3btn</button></div>
-            <div id="3ans3"><button class="ansbuttons3" id="3a3">correct</button></div>
-            <div id="3ans4"><button class="ansbuttons3" id="3a4">q3btn</button></div>
+            <div id="state3" class="questiontext">Question 3!</div>    
+            <div id="questionspace">Why do computers need code and not written paragraphs?</div>
+            <div id="3ans1"><button class="ansbuttons3" id="3a1">Haha computer dumb.</button></div>
+            <div id="3ans2"><button class="ansbuttons3" id="3a2">Computers do take written paragraphs.</button></div>
+            <div id="3ans3"><button class="ansbuttons3" id="3a3">Computers work with binary, and through multiple layers of code languages.</button></div>
+            <div id="3ans4"><button class="ansbuttons3" id="3a4">Because they skipped the third grade.</button></div>
         </div>    
 
         <div id="fourthQcontent">
-             <div id="state1">Question 4!</div>    
-             <div id="questionspace">4</div>
-             <div id="4ans1"><button class="ansbuttons4" id="4a1">q4btn</button></div>
-             <div id="4ans2"><button class="ansbuttons4" id="4a2">q4btn</button></div>
-             <div id="4ans3"><button class="ansbuttons4" id="4a3">correct</button></div>
-             <div id="4ans4"><button class="ansbuttons4" id="4a4">q4btn</button></div>
+             <div id="state4" class="questiontext">Question 4!</div>    
+             <div id="questionspace">What language uses loops and if-then statements?</div>
+             <div id="4ans1"><button class="ansbuttons4" id="4a1">html</button></div>
+             <div id="4ans2"><button class="ansbuttons4" id="4a2">css</button></div>
+             <div id="4ans3"><button class="ansbuttons4" id="4a3">Javascript</button></div>
+             <div id="4ans4"><button class="ansbuttons4" id="4a4">english</button></div>
         </div>   
 
         <div id="fifthQcontent">
-            <div id="state1">Question 5!</div>    
-            <div id="questionspace">5</div>
-            <div id="5ans1"><button class="ansbuttons5" id="5a1">q5btn</button></div>
-            <div id="5ans2"><button class="ansbuttons5" id="5a2">q5btn</button></div>
-            <div id="5ans3"><button class="ansbuttons5" id="5a3">q5btn</button></div>
-            <div id="5ans4"><button class="ansbuttons5" id="5a4">correct</button></div>
+            <div id="state5" class="questiontext">Question 5!</div>    
+            <div id="questionspace">Is coding an easy thing to learn?</div>
+            <div id="5ans1"><button class="ansbuttons5" id="5a1">Yes, I have never had a struggle in my life.</button></div>
+            <div id="5ans2"><button class="ansbuttons5" id="5a2">Yes, java is my native tongue.</button></div>
+            <div id="5ans3"><button class="ansbuttons5" id="5a3">Yes, with my eyes closed.</button></div>
+            <div id="5ans4"><button class="ansbuttons5" id="5a4">No, but with practice it becomes easier.</button></div>
         </div>   
     </div>
 
@@ -80,11 +80,17 @@
 
 
     <div id="scorePage">
+        <table>
+         
         <div id="displayTable">
-            <div id="initDisplay"></div>
-            <div id="scoreDisplay"></div>
-
-        </div>  
+            <tr>
+                <th>
+            <div id="initDisplay"></div></th>
+            <th>
+            <div id="scoreDisplay"></div></th>
+        </tr>
+        </div> 
+    </table> 
         <button id="reset">Would you like to try again?</button>
 
     </div>
